@@ -2,10 +2,6 @@
 
 **`Computer Science Student | Java Backend Developer`**
 
-<p align="center">
-  <img src="https://media.githubusercontent.com/media/Kayo-P7/Kayo-P7/main/chess_animation.gif" alt="Animação Pixel Art de Xadrez" width="400">
-</p>
-
 I'm a Computer Science student passionate about technology, backend development, and building robust, scalable solutions. 
 
 I focus on creating high-quality software using Java and the Spring Ecosystem, applying solid object-oriented programming (OOP) principles, clean architecture, and efficient database management.
