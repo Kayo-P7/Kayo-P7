@@ -1,55 +1,83 @@
-# Kayo Albuquerque
+# Hi there, I'm Kayo Albuquerque 👋
 
-**`Computer Science Student | Java Backend Developer`**
+<div align="center">
+  <h3><code>Computer Science Student | Java Backend Developer</code></h3>
+  <p>Building scalable REST APIs, domain-driven backend systems, and clean code solutions.</p>
 
-I'm a Computer Science student passionate about technology, backend development, and building robust, scalable solutions. 
-
-I focus on creating high-quality software using Java and the Spring Ecosystem, applying solid object-oriented programming (OOP) principles, clean architecture, and efficient database management.
-
----
-
-## 🚀 Featured Projects
-
-🔹 **Cadastro de Pessoas (Thymeleaf)** Web application leveraging **Spring Boot** and **Thymeleaf** for server-side rendering, implementing full CRUD operations, validation, and dynamic UI rendering.
-
-🔹 **API REST de Produtos** A robust RESTful API built with **Spring Boot**, handling product management with proper HTTP status codes, data validation, and automated persistence with JPA/Hibernate.
-
-🔹 **Booking System** A Java-based system focused on appointment and reservation logic, designed to practice complex business rules, data structures, and relational mappings.
-
----
-
-## 🧰 Languages and Tools
-
-<img align="left" alt="Java" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
-<img align="left" alt="Spring" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"/>
-<img align="left" alt="Thymeleaf" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/thymeleaf/thymeleaf-original.svg"/>
-<img align="left" alt="HTML5" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
-<img align="left" alt="CSS3" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"/>
-<img align="left" alt="MySQL" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
-<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"/>
-<img align="left" alt="GitHub" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
-<img align="left" alt="Terminal" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"/>
+  <a href="https://linkedin.com/in/kayo-albuquerque-39268b3a3">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="mailto:kayopinheiro5007@gmail.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</div>
 
 <br />
-<br />
 
 ---
 
-## 📚 Currently Learning & Improving
+## 👨‍💻 About Me
 
-- **Backend:** Advanced Spring Boot, Spring Security, and REST API Best Practices (DTOs, Exception Handling).
-- **Frontend for Java:** SSR with Thymeleaf, semantic HTML5, and modern CSS layout techniques.
-- **Architecture & Data:** SQL tuning, Database Design, and Software Architecture Fundamentals (SOLID, MVC).
+I am a **Computer Science** student (4th Semester) focused on modern **Java Backend Development** and the **Spring Ecosystem**. 
 
----
+I enjoy architecting software that solves business problems using solid **Object-Oriented Programming (OOP)**, Layered Architecture, DTO design patterns, dynamic exception handling, and relational database management.
 
-## 🎯 Career Goal
-
-To secure an internship or junior developer role where I can contribute to real-world Java/Spring applications, while continuously learning from experienced teams and improving my technical design skills.
+* 📍 **Location:** Belém, Pará — Brazil
+* 🎯 **Career Focus:** Java Backend Internship & Entry-Level Developer roles
+* ⚡ **Core Mindset:** Clean Code, Continuous Learning, and Production-Ready Practices
 
 ---
 
-## 📫 Contact
+## 🚀 Key Projects
 
-📧 **kayoalbuquerque99@gmail.com** 📍 Belém, Pará - Brazil  
-💼 Open to internship and junior backend opportunities.
+### 🔹 [Business Platform API](https://github.com/Kayo-P7/business-platform-api)
+> **Stack:** `Java` • `Spring Boot` • `Spring Security` • `Spring Data JPA` • `PostgreSQL`
+* Developed a robust RESTful backend service for business management and operations.
+* Implemented layered architecture (Controller, Service, Repository), secure authentication workflows, DTO encapsulation, and custom exception handling.
+* Integrated dynamic database queries and relational persistence mapping with Spring Data JPA.
+
+### 🔹 [Inventory Management System](https://github.com/Kayo-P7)
+> **Stack:** `Java` • `OOP` • `SQL` • `MySQL` • `JDBC`
+* Built a backend inventory control solution handling stock movements, product categorization, and record updates.
+* Focused on data integrity, transaction safety, and raw/ORM SQL optimization for fast database access.
+
+### 🔹 [Linux System Automation Scripts](https://github.com/Kayo-P7)
+> **Stack:** `Linux` • `Bash` • `Shell Script`
+* Created automated Bash utility scripts for server maintenance, permission management, and file processing tasks.
+* Demonstrates practical OS environment knowledge and command-line automation efficiency.
+
+---
+
+## 🧰 Tech Stack
+
+### **Languages & Core**
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### **Frameworks & Database**
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
+![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+
+### **Tools & Environment**
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+
+---
+
+## 📚 Active Learning Focus
+
+* 🔒 Advanced **Spring Security** & Stateless JWT Authentication
+* 🧪 Automated Testing using **JUnit 5** & **Mockito**
+* 🏗️ **SOLID** principles, Clean Architecture & Microservices Basics
+
+---
+
+<div align="center">
+  <sub>Designed & Maintained by <a href="https://github.com/Kayo-P7">Kayo Albuquerque</a></sub>
+</div>
