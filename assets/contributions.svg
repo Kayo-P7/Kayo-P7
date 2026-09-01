@@ -1,0 +1,110 @@
+<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050505"/>
+      <stop offset="100%" stop-color="#180000"/>
+    </linearGradient>
+
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect
+    width="900"
+    height="180"
+    rx="16"
+    fill="url(#bg)"
+    stroke="#3d0000"
+    stroke-width="2"
+  />
+
+  <text
+    x="35"
+    y="36"
+    fill="#ff2b2b"
+    font-family="monospace"
+    font-size="18"
+    font-weight="bold">
+    CONTRIBUTION ACTIVITY
+  </text>
+
+  <text
+    x="35"
+    y="59"
+    fill="#777"
+    font-family="monospace"
+    font-size="12">
+    Kayo-P7 / github.com
+  </text>
+
+  <line
+    x1="35"
+    y1="78"
+    x2="865"
+    y2="78"
+    stroke="#3d0000"
+    stroke-width="1"
+  />
+
+  <!-- Activity -->
+  <circle cx="55"  cy="110" r="5" fill="#3d0000"/>
+  <circle cx="83"  cy="110" r="6" fill="#550000"/>
+  <circle cx="111" cy="110" r="7" fill="#700000"/>
+  <circle cx="139" cy="110" r="8" fill="#8f0000"/>
+  <circle cx="167" cy="110" r="7" fill="#a80000"/>
+  <circle cx="195" cy="110" r="8" fill="#c40000"/>
+  <circle cx="223" cy="110" r="9" fill="#e00000"/>
+  <circle cx="251" cy="110" r="7" fill="#a80000"/>
+  <circle cx="279" cy="110" r="8" fill="#c40000"/>
+  <circle cx="307" cy="110" r="9" fill="#e00000"/>
+
+  <!-- Current contribution -->
+  <circle
+    cx="335"
+    cy="110"
+    r="8"
+    fill="#ff3030"
+    filter="url(#glow)"
+  >
+    <animate
+      attributeName="r"
+      values="7;11;7"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+
+    <animate
+      attributeName="opacity"
+      values="1;0.55;1"
+      dur="1.5s"
+      repeatCount="indefinite"
+    />
+  </circle>
+
+  <text
+    x="865"
+    y="113"
+    text-anchor="end"
+    fill="#ff3030"
+    font-family="monospace"
+    font-size="14">
+    BUILDING...
+  </text>
+
+  <text
+    x="865"
+    y="136"
+    text-anchor="end"
+    fill="#555"
+    font-family="monospace"
+    font-size="10">
+    contribution system online
+  </text>
+
+</svg>
