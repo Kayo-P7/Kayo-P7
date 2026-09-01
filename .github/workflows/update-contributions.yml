@@ -20,7 +20,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Generate contribution animation
         env:
@@ -32,7 +32,6 @@ jobs:
           import json
           import os
           import urllib.request
-          from datetime import datetime
 
           USERNAME = "Kayo-P7"
 
@@ -42,11 +41,11 @@ jobs:
               contributionsCollection {
                 contributionCalendar {
                   totalContributions
+
                   weeks {
                     contributionDays {
                       date
                       contributionCount
-                      contributionLevel
                     }
                   }
                 }
@@ -87,118 +86,128 @@ jobs:
 
           total = calendar["totalContributions"]
 
-          days = []
+          weeks = calendar["weeks"]
 
-          for week in calendar["weeks"]:
-              for day in week["contributionDays"]:
-                  days.append(day)
-
-          # Ordena por data
-          days.sort(key=lambda item: item["date"])
-
-          # =========================================================
-          # CONFIGURAÇÃO VISUAL
-          # =========================================================
+          # ==========================================================
+          # VISUAL CONFIGURATION
+          # ==========================================================
 
           WIDTH = 900
-          HEIGHT = 260
+          HEIGHT = 220
 
-          LEFT = 40
-          TOP = 110
+          GRID_X = 32
+          GRID_Y = 105
 
-          CELL = 18
-          GAP = 5
+          CELL = 11
+          GAP = 3
 
-          # Calcula uma célula por dia do calendário.
-          # O calendário do GitHub normalmente possui ~53 semanas.
-          # Aqui mostramos os últimos 18 meses de atividade.
-          recent_days = days[-365:]
-
-          # =========================================================
-          # GERA OS BLOCOS
-          # =========================================================
+          # GitHub normally returns 53 weeks.
+          # We limit the visual grid to 53 columns.
+          weeks = weeks[-53:]
 
           squares = []
 
-          for index, day in enumerate(recent_days):
+          latest_date = None
 
-              week = index // 7
-              weekday = index % 7
+          # Find latest day that has a contribution
+          for week in weeks:
+              for day in week["contributionDays"]:
+                  if day["contributionCount"] > 0:
+                      latest_date = day["date"]
 
-              x = LEFT + week * (CELL + GAP)
-              y = TOP + weekday * (CELL + GAP)
+          # ==========================================================
+          # CONTRIBUTION GRID
+          # ==========================================================
 
-              count = day["contributionCount"]
+          for week_index, week in enumerate(weeks):
 
-              if count == 0:
-                  fill = "#160000"
-              elif count == 1:
-                  fill = "#4a0000"
-              elif count <= 3:
-                  fill = "#760000"
-              elif count <= 6:
-                  fill = "#b00000"
-              else:
-                  fill = "#ff2222"
+              x = GRID_X + week_index * (CELL + GAP)
 
-              # Último dia com contribuição recebe animação.
-              is_latest = (
-                  count > 0
-                  and all(
-                      d["contributionCount"] == 0
-                      for d in recent_days[index + 1:]
-                  )
-              )
+              for day_index, day in enumerate(
+                  week["contributionDays"]
+              ):
 
-              if is_latest:
+                  y = GRID_Y + day_index * (CELL + GAP)
 
-                  squares.append(
-                      f"""
-                      <rect
-                        x="{x}"
-                        y="{y}"
-                        width="{CELL}"
-                        height="{CELL}"
-                        rx="4"
-                        fill="{fill}">
-                        <animate
-                          attributeName="opacity"
-                          values="1;0.35;1"
-                          dur="1.4s"
-                          repeatCount="indefinite"/>
-                        <animate
-                          attributeName="width"
-                          values="{CELL};{CELL + 3};{CELL}"
-                          dur="1.4s"
-                          repeatCount="indefinite"/>
-                        <animate
-                          attributeName="height"
-                          values="{CELL};{CELL + 3};{CELL}"
-                          dur="1.4s"
-                          repeatCount="indefinite"/>
-                      </rect>
-                      """
-                  )
+                  count = day["contributionCount"]
 
-              else:
+                  # ==================================================
+                  # RED INTENSITY
+                  # ==================================================
 
-                  squares.append(
-                      f"""
-                      <rect
-                        x="{x}"
-                        y="{y}"
-                        width="{CELL}"
-                        height="{CELL}"
-                        rx="4"
-                        fill="{fill}"/>
-                      """
-                  )
+                  if count == 0:
+                      fill = "#170000"
 
-          # =========================================================
+                  elif count == 1:
+                      fill = "#4d0000"
+
+                  elif count <= 3:
+                      fill = "#720000"
+
+                  elif count <= 6:
+                      fill = "#ad0000"
+
+                  elif count <= 10:
+                      fill = "#df0000"
+
+                  else:
+                      fill = "#ff2b2b"
+
+                  # ==================================================
+                  # LATEST CONTRIBUTION
+                  # ==================================================
+
+                  if day["date"] == latest_date:
+
+                      squares.append(
+                          f'''
+                          <rect
+                            x="{x}"
+                            y="{y}"
+                            width="{CELL}"
+                            height="{CELL}"
+                            rx="3"
+                            fill="{fill}">
+
+                            <title>
+                              {day["date"]}: {count} contributions
+                            </title>
+
+                            <animate
+                              attributeName="opacity"
+                              values="1;0.35;1"
+                              dur="1.4s"
+                              repeatCount="indefinite"/>
+
+                          </rect>
+                          '''
+                      )
+
+                  else:
+
+                      squares.append(
+                          f'''
+                          <rect
+                            x="{x}"
+                            y="{y}"
+                            width="{CELL}"
+                            height="{CELL}"
+                            rx="3"
+                            fill="{fill}">
+
+                            <title>
+                              {day["date"]}: {count} contributions
+                            </title>
+
+                          </rect>
+                          '''
+                      )
+
+          # ==========================================================
           # SVG
-          # =========================================================
+          # ==========================================================
 
-          svg = f"""
+          svg = f'''
           <svg
             width="{WIDTH}"
             height="{HEIGHT}"
@@ -220,11 +229,11 @@ jobs:
 
                 <stop
                   offset="100%"
-                  stop-color="#170000"/>
+                  stop-color="#160000"/>
 
               </linearGradient>
 
-              <filter id="glow">
+              <filter id="redGlow">
 
                 <feGaussianBlur
                   stdDeviation="4"
@@ -247,43 +256,46 @@ jobs:
             <rect
               width="100%"
               height="100%"
-              rx="18"
+              rx="16"
               fill="url(#background)"
-              stroke="#4d0000"
+              stroke="#3d0000"
               stroke-width="2"/>
+
 
             <!-- TITLE -->
 
             <text
               x="32"
-              y="38"
+              y="34"
               font-family="monospace"
               font-size="18"
               font-weight="bold"
-              fill="#ff2b2b">
+              fill="#ff3030">
 
               CONTRIBUTION ACTIVITY
 
             </text>
 
+
             <!-- USER -->
 
             <text
               x="32"
-              y="62"
+              y="55"
               font-family="monospace"
-              font-size="12"
+              font-size="11"
               fill="#777">
 
-              Kayo-P7 / github.com
+              Kayo-P7 / GitHub
 
             </text>
+
 
             <!-- TOTAL -->
 
             <text
               x="865"
-              y="43"
+              y="37"
               text-anchor="end"
               font-family="monospace"
               font-size="18"
@@ -296,96 +308,107 @@ jobs:
 
             <text
               x="865"
-              y="62"
+              y="55"
               text-anchor="end"
               font-family="monospace"
-              font-size="11"
+              font-size="10"
               fill="#777">
 
               CONTRIBUTIONS
 
             </text>
 
-            <!-- SEPARATOR -->
+
+            <!-- LINE -->
 
             <line
               x1="32"
-              y1="78"
+              y1="70"
               x2="868"
-              y2="78"
-              stroke="#350000"
+              y2="70"
+              stroke="#3d0000"
               stroke-width="1"/>
 
-            <!-- CONTRIBUTION GRID -->
+
+            <!-- GRID -->
 
             {''.join(squares)}
+
 
             <!-- LEGEND -->
 
             <text
               x="32"
-              y="244"
+              y="210"
               font-family="monospace"
-              font-size="10"
+              font-size="9"
               fill="#666">
 
-              ACTIVITY
+              LESS
 
             </text>
 
             <rect
-              x="92"
-              y="235"
-              width="11"
-              height="11"
+              x="65"
+              y="202"
+              width="10"
+              height="10"
               rx="2"
-              fill="#160000"/>
+              fill="#170000"/>
 
             <rect
-              x="109"
-              y="235"
-              width="11"
-              height="11"
+              x="81"
+              y="202"
+              width="10"
+              height="10"
               rx="2"
-              fill="#4a0000"/>
+              fill="#4d0000"/>
 
             <rect
-              x="126"
-              y="235"
-              width="11"
-              height="11"
+              x="97"
+              y="202"
+              width="10"
+              height="10"
               rx="2"
-              fill="#760000"/>
+              fill="#720000"/>
 
             <rect
-              x="143"
-              y="235"
-              width="11"
-              height="11"
+              x="113"
+              y="202"
+              width="10"
+              height="10"
               rx="2"
-              fill="#b00000"/>
+              fill="#ad0000"/>
 
             <rect
-              x="160"
-              y="235"
-              width="11"
-              height="11"
+              x="129"
+              y="202"
+              width="10"
+              height="10"
               rx="2"
-              fill="#ff2222"/>
+              fill="#df0000"/>
+
+            <rect
+              x="145"
+              y="202"
+              width="10"
+              height="10"
+              rx="2"
+              fill="#ff2b2b"/>
 
             <text
-              x="185"
-              y="244"
+              x="166"
+              y="210"
               font-family="monospace"
-              font-size="10"
+              font-size="9"
               fill="#666">
 
-              LESS → MORE
+              MORE
 
             </text>
 
           </svg>
-          """
+          '''
 
           os.makedirs("assets", exist_ok=True)
 
@@ -398,10 +421,11 @@ jobs:
               file.write(svg)
 
           print(
-              f"Generated contribution animation with {total} contributions."
+              f"Generated animation with {total} total contributions."
           )
 
           PY
+
 
       - name: Commit updated animation
         run: |
@@ -415,11 +439,12 @@ jobs:
 
           if git diff --cached --quiet; then
 
-            echo "No changes."
+            echo "No changes detected."
 
           else
 
-            git commit -m "chore: update contribution animation"
+            git commit \
+              -m "chore: update contribution animation"
 
             git push
 
