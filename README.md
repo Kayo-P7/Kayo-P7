@@ -3,24 +3,33 @@
 <div align="center">
 
 <img 
-  src="https://capsule-render.vercel.app/api?type=waving&color=0:0b1320,35:14233b,70:173b5e,100:1f6feb&height=220&section=header&text=Kayo%20Albuquerque&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=JAVA%20BACKEND%20DEVELOPER&descAlignY=60&descColor=58a6ff&descSize=16&fontFamily=Raleway"
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:000000,35:120000,70:5c0000,100:d40000&height=220&section=header&text=Kayo%20Albuquerque&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=JAVA%20BACKEND%20DEVELOPER&descAlignY=61&descColor=ff3b3b&descSize=16&fontFamily=Raleway"
   width="100%"
 />
 
 <br>
 
 <img 
-  src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=600&size=21&duration=2800&pause=900&color=58A6FF&center=true&vCenter=true&width=800&lines=Java+Backend+Developer;Spring+Boot+%7C+Spring+Security;Building+Scalable+REST+APIs;Clean+Code+%7C+SOLID+%7C+OOP;Learning+%7C+Building+%7C+Improving"
-  alt="Typing Animation"
+  src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&weight=700&size=20&duration=2400&pause=800&color=FF3B3B&center=true&vCenter=true&width=850&lines=%24+java+-jar+backend.jar;%3E+Starting+Spring+Boot...;%3E+Loading+Spring+Security...;%3E+Connecting+PostgreSQL...;%3E+HTTP+200+OK;%3E+Backend+running+successfully."
+  alt="Backend Terminal Animation"
+/>
+
+<br>
+
+<img
+  src="https://www.gitskins.com/api/section/chess?username=Kayo-P7&theme=cyber"
+  width="850"
+  alt="Animated Chess Replay"
 />
 
 <br>
 
   <a href="https://linkedin.com/in/kayo-albuquerque-39268b3a3">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+    <img src="https://img.shields.io/badge/LinkedIn-990000?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
+
   <a href="mailto:kayopinheiro5007@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-B30000?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
 
 </div>
@@ -100,7 +109,7 @@ I enjoy architecting software that solves business problems using solid **Object
 <div align="center">
 
 <img 
-  src="https://capsule-render.vercel.app/api?type=waving&color=0:1f6feb,50:173b5e,100:0b1320&height=100&section=footer&animation=twinkling"
+  src="https://capsule-render.vercel.app/api?type=waving&color=0:140000,50:5c0000,100:000000&height=100&section=footer&animation=twinkling"
   width="100%"
 />
 
