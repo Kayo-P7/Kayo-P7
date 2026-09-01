@@ -17,9 +17,9 @@
 <br>
 
 <img
-  src="./assets/commit-animation.svg"
-  width="850"
-  alt="Commit Activity Animation"
+  src="./assets/contributions.svg"
+  width="100%"
+  alt="GitHub Contribution Animation"
 />
 
 <br>
