@@ -17,9 +17,9 @@
 <br>
 
 <img
-  src="https://www.gitskins.com/api/section/chess?username=Kayo-P7&theme=cyber"
+  src="./assets/commit-animation.svg"
   width="850"
-  alt="Animated Chess Replay"
+  alt="Commit Activity Animation"
 />
 
 <br>
