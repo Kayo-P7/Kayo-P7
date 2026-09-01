@@ -4,6 +4,13 @@
   <h3><code>Computer Science Student | Java Backend Developer</code></h3>
   <p>Building scalable REST APIs, domain-driven backend systems, and clean code solutions.</p>
 
+  <p>
+    <img 
+      src="https://readme-typing-svg.demolab.com/?font=JetBrains+Mono&size=22&duration=3000&pause=1000&color=58A6FF&center=true&vCenter=true&width=700&lines=Java+Backend+Developer;Spring+Boot+Developer;Building+REST+APIs;Clean+Code+%7C+SOLID+%7C+OOP"
+      alt="Typing Animation"
+    />
+  </p>
+
   <a href="https://linkedin.com/in/kayo-albuquerque-39268b3a3">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
