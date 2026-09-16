@@ -50,53 +50,85 @@ I enjoy architecting software that solves business problems using solid **Object
 
 ---
 
-## 🚀 Key Projects
-
-### 🔹 [Business Platform API](https://github.com/Kayo-P7/business-platform-api)
-> **Stack:** `Java` • `Spring Boot` • `Spring Security` • `Spring Data JPA` • `PostgreSQL`
-
-* Developed a robust RESTful backend service for business management and operations.
-* Implemented layered architecture (Controller, Service, Repository), secure authentication workflows, DTO encapsulation, and custom exception handling.
-* Integrated dynamic database queries and relational persistence mapping with Spring Data JPA.
-
-### 🔹 [Inventory Management System](https://github.com/Kayo-P7)
-> **Stack:** `Java` • `OOP` • `SQL` • `MySQL` • `JDBC`
-
-* Built a backend inventory control solution handling stock movements, product categorization, and record updates.
-* Focused on data integrity, transaction safety, and raw/ORM SQL optimization for fast database access.
-
-### 🔹 [Linux System Automation Scripts](https://github.com/Kayo-P7)
-> **Stack:** `Linux` • `Bash` • `Shell Script`
-
-* Created automated Bash utility scripts for server maintenance, permission management, and file processing tasks.
-* Demonstrates practical OS environment knowledge and command-line automation efficiency.
-
----
-
 ## 🧰 Tech Stack
 
-### **Languages & Core**
+<div align="center">
 
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+### Languages & Core
 
-### **Frameworks & Database**
+<a href="https://www.java.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=java" />
+</a>
 
-![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
-![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=for-the-badge&logo=springsecurity&logoColor=white)
-![Hibernate](https://img.shields.io/badge/Hibernate-59666C?style=for-the-badge&logo=hibernate&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
+<a href="https://www.w3.org/Style/CSS/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=css" />
+</a>
 
-### **Tools & Environment**
+<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+  <img src="https://skillicons.dev/icons?i=js" />
+</a>
 
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+<a href="https://www.w3.org/html/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=html" />
+</a>
+
+<a href="https://www.mysql.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=mysql" />
+</a>
+
+<a href="https://www.postgresql.org/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=postgres" />
+</a>
+
+<br><br>
+
+### Frameworks & Backend
+
+<a href="https://spring.io/projects/spring-boot" target="_blank">
+  <img src="https://skillicons.dev/icons?i=spring" />
+</a>
+
+<a href="https://spring.io/projects/spring-security" target="_blank">
+  <img src="https://skillicons.dev/icons?i=spring" />
+</a>
+
+<a href="https://hibernate.org/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=hibernate" />
+</a>
+
+<br><br>
+
+### Tools & Environment
+
+<a href="https://git-scm.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=git" />
+</a>
+
+<a href="https://github.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=github" />
+</a>
+
+<a href="https://www.linux.org/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=linux" />
+</a>
+
+<a href="https://www.docker.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=docker" />
+</a>
+
+<a href="https://www.postman.com/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=postman" />
+</a>
+
+<a href="https://www.jetbrains.com/idea/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=idea" />
+</a>
+
+<a href="https://www.jetbrains.com/webstorm/" target="_blank">
+  <img src="https://skillicons.dev/icons?i=webstorm" />
+</a>
+
+</div>
 
 ---
 
