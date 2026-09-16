@@ -54,21 +54,7 @@ I enjoy architecting software that solves business problems using solid **Object
 
 <div align="center">
 
-### Languages & Core
-
-<img src="https://skillicons.dev/icons?i=java,js,html,css,mysql,postgres" />
-
-<br><br>
-
-### Frameworks & Backend
-
-<img src="https://skillicons.dev/icons?i=spring,hibernate" />
-
-<br><br>
-
-### Tools & Environment
-
-<img src="https://skillicons.dev/icons?i=git,github,linux,docker,postman,idea,webstorm" />
+<img src="https://skillicons.dev/icons?i=java,js,html,css,mysql,postgres,spring,hibernate,git,github,linux,docker,postman,idea,webstorm" />
 
 </div>
 
