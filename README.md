@@ -56,77 +56,19 @@ I enjoy architecting software that solves business problems using solid **Object
 
 ### Languages & Core
 
-<a href="https://www.java.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=java" />
-</a>
-
-<a href="https://www.w3.org/Style/CSS/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=css" />
-</a>
-
-<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-  <img src="https://skillicons.dev/icons?i=js" />
-</a>
-
-<a href="https://www.w3.org/html/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=html" />
-</a>
-
-<a href="https://www.mysql.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=mysql" />
-</a>
-
-<a href="https://www.postgresql.org/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=postgres" />
-</a>
+<img src="https://skillicons.dev/icons?i=java,js,html,css,mysql,postgres" />
 
 <br><br>
 
 ### Frameworks & Backend
 
-<a href="https://spring.io/projects/spring-boot" target="_blank">
-  <img src="https://skillicons.dev/icons?i=spring" />
-</a>
-
-<a href="https://spring.io/projects/spring-security" target="_blank">
-  <img src="https://skillicons.dev/icons?i=spring" />
-</a>
-
-<a href="https://hibernate.org/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=hibernate" />
-</a>
+<img src="https://skillicons.dev/icons?i=spring,hibernate" />
 
 <br><br>
 
 ### Tools & Environment
 
-<a href="https://git-scm.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=git" />
-</a>
-
-<a href="https://github.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=github" />
-</a>
-
-<a href="https://www.linux.org/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=linux" />
-</a>
-
-<a href="https://www.docker.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=docker" />
-</a>
-
-<a href="https://www.postman.com/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=postman" />
-</a>
-
-<a href="https://www.jetbrains.com/idea/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=idea" />
-</a>
-
-<a href="https://www.jetbrains.com/webstorm/" target="_blank">
-  <img src="https://skillicons.dev/icons?i=webstorm" />
-</a>
+<img src="https://skillicons.dev/icons?i=git,github,linux,docker,postman,idea,webstorm" />
 
 </div>
 
